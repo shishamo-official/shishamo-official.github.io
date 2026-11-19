@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ぼく、ししゃも、｜本気を出さない猫 公式サイト</title>
+<meta name="description" content="本気を出さない猫「ししゃも」の公式サイト。ゲーム「ししゃものきまぐれジャンプ」配信中。">
+<meta property="og:title" content="ぼく、ししゃも、｜本気を出さない猫 公式サイト">
+<meta property="og:description" content="…魚じゃないです。本気出さない猫やってます。">
+<meta property="og:image" content="https://shishamo-official.github.io/ogp.jpg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#15171c;--sub:#5b6170;--blue:#2f6fdb;--sky:#e7f0ff;--bg:#f7f9fc;--card:#fff;--line:#e6eaf1;--cream:#fff4dc}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.8 "M PLUS Rounded 1c","Hiragino Maru Gothic ProN",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header.nav{position:sticky;top:0;z-index:10;background:rgba(247,249,252,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:18px}
+.glasses{display:inline-flex;gap:3px}.glasses i{display:block;width:14px;height:8px;background:var(--ink);border-radius:4px 4px 6px 6px}
+.nav ul{display:flex;gap:18px;list-style:none;padding:0;font-size:14px;color:var(--sub)}
+.nav ul a:hover{color:var(--blue)}
+.hero{padding:56px 0 40px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
+.pill{display:inline-block;background:var(--ink);color:#fff;font-size:12px;letter-spacing:.2em;padding:6px 14px;border-radius:999px}
+h1{font-size:clamp(34px,5.4vw,56px);line-height:1.1;font-weight:800;margin:18px 0 12px}
+h1 .bl{color:var(--blue)}
+.nw{white-space:nowrap}
+.lead{color:var(--sub);font-size:17px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:13px 22px;font-weight:800;font-size:15px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.dark{background:var(--ink);color:#fff}
+.btn.line{border:2px solid var(--ink)}
+.stage{position:relative;aspect-ratio:1;display:grid;place-items:center}
+.blob{position:absolute;inset:6%;background:var(--sky);border-radius:46% 54% 50% 50%/52% 46% 54% 48%}
+.dot{position:absolute;border-radius:50%}
+.d1{width:22%;height:22%;background:#cfe0ff;right:2%;top:4%}.d2{width:12%;height:12%;background:var(--blue);left:6%;bottom:10%}.d3{width:8%;height:8%;background:var(--ink);right:12%;bottom:6%}
+.cat{position:relative;width:52%;cursor:pointer;filter:drop-shadow(0 18px 18px rgba(21,23,28,.12));animation:float 4s ease-in-out infinite;user-select:none;-webkit-user-drag:none}
+@keyframes float{50%{transform:translateY(-8px)}}
+.bubble{position:absolute;top:2%;left:0;background:#fff;border:2px solid var(--ink);border-radius:18px;padding:8px 14px;font-weight:800;font-size:15px;white-space:nowrap}
+.bubble:after{content:"";position:absolute;right:18px;bottom:-10px;width:14px;height:14px;background:#fff;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:rotate(45deg)}
+section{padding:56px 0}
+.label{font-size:12px;letter-spacing:.25em;color:var(--blue);font-weight:800}
+h2{font-size:clamp(26px,4vw,34px);font-weight:800;margin:6px 0 24px}
+.game{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.ghead{display:flex;gap:16px;align-items:center}
+.ghead img{width:84px;height:84px;border-radius:20px;box-shadow:0 6px 16px rgba(21,23,28,.12)}
+.tag{display:inline-block;background:var(--sky);color:var(--blue);font-size:12px;font-weight:800;padding:3px 10px;border-radius:999px}
+.game h3{font-size:22px;font-weight:800;line-height:1.35;margin-top:4px}
+.game p{color:var(--sub);margin:14px 0 4px}
+.feats{list-style:none;padding:0;margin:14px 0 20px;display:grid;gap:6px}
+.feats li{padding-left:22px;position:relative}.feats li:before{content:"";position:absolute;left:0;top:.62em;width:12px;height:7px;background:var(--ink);border-radius:3px 3px 5px 5px}
+.shots{display:flex;gap:14px;justify-content:center}
+.shots img{width:46%;border-radius:22px;border:6px solid var(--ink);background:var(--ink)}
+.shots img:last-child{transform:translateY(24px)}
+.next{margin-top:20px;border:2px dashed #c9d2e2;border-radius:28px;padding:22px 28px;display:flex;align-items:center;gap:18px;color:var(--sub)}
+.next img{width:90px}
+.next b{color:var(--ink);font-size:18px}
+.profile{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;align-items:center}
+.profile .ph{background:var(--cream);border-radius:28px;aspect-ratio:1;display:grid;place-items:center}
+.profile .ph img{width:62%}
+dl{display:grid;grid-template-columns:auto 1fr;gap:0;background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+dt,dd{padding:13px 18px;border-bottom:1px solid var(--line)}
+dt{font-weight:800;font-size:14px;color:var(--blue);background:#fafcff}
+dl>*:nth-last-child(-n+2){border-bottom:0}
+.sns{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.sns a{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 12px;text-align:center;font-weight:800;transition:transform .15s,border-color .15s}
+.sns a:hover{transform:translateY(-2px);border-color:var(--blue)}
+.sns small{display:block;color:var(--sub);font-weight:500;font-size:12px}
+footer{background:var(--ink);color:#cfd5e2;margin-top:40px;padding:36px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:center}
+footer a:hover{color:#fff}
+footer .logo{color:#fff}.footer .glasses i,footer .glasses i{background:#fff}
+@media(max-width:760px){
+ .nav ul{display:none}
+ .hero{padding-top:28px}
+ .hero .wrap,.game,.profile{grid-template-columns:1fr}
+ .stage{order:-1;max-width:360px;margin:0 auto;width:100%}
+ .hero .txt{text-align:center}
+ .lead{font-size:14.5px}
+ .bubble{top:-3%;left:0}.cta{justify-content:center}
+ .game{padding:22px}.shots img:last-child{transform:none}
+ .sns{grid-template-columns:repeat(2,1fr)}
+ .profile .ph{max-width:300px;margin:0 auto;width:100%}
+ dl{grid-template-columns:1fr}
+ dt{border-bottom:0;padding-bottom:0;background:none;font-size:12px}
+ dd{padding-top:2px}
+}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="logo" href="#"><span class="glasses"><i></i><i></i></span>ぼく、ししゃも、</a>
+  <ul><li><a href="#games">ゲーム</a></li><li><a href="#about">ししゃもについて</a></li><li><a href="#sns">SNS</a></li></ul>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div class="txt">
+    <span class="pill">NOT SERIOUS CAT</span>
+    <h1><span class="nw">本気を出さない猫、</span><br><span class="bl">ししゃも</span>です。</h1>
+    <p class="lead">サングラスと青い蝶ネクタイがトレードマーク。<br>ゲームやスタンプで、ゆるっと活動中。</p>
+    <div class="cta">
+      <a class="btn dark" href="https://apps.apple.com/jp/app/id6834846953" target="_blank" rel="noopener">App Store でゲームを見る</a>
+      <a class="btn line" href="#sns">SNS を見る</a>
+    </div>
+  </div>
+  <div class="stage">
+    <div class="blob"></div><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div>
+    <div class="bubble" id="bubble">…ししゃもです。</div>
+    <img class="cat" id="cat" src="cat.webp" alt="サングラスをかけた猫のししゃも">
+  </div>
+</div></section>
+
+<section id="games"><div class="wrap">
+  <div class="label">GAMES</div>
+  <h2>ししゃものゲーム</h2>
+  <div class="game">
+    <div>
+      <div class="ghead">
+        <img src="icon_jump.webp" alt="ししゃものきまぐれジャンプのアイコン">
+        <div><span class="tag">iPhone・無料</span><h3>ししゃものきまぐれジャンプ</h3></div>
+      </div>
+      <p>本気を出さない猫の、長押しジャンプ。ためて、はなして、足場から足場へ。</p>
+      <ul class="feats">
+        <li>おうちから宇宙まで、80のステージ</li>
+        <li>どこまでも続くエンドレスモード</li>
+        <li>集めた小魚で、ししゃもをきせかえ</li>
+      </ul>
+      <a class="btn dark" href="https://apps.apple.com/jp/app/id6834846953" target="_blank" rel="noopener">App Store でダウンロード</a>
+    </div>
+    <div class="shots">
+      <img src="jump_shot1.webp" alt="ゲーム画面1">
+      <img src="jump_shot2.webp" alt="ゲーム画面2">
+    </div>
+  </div>
+  <div class="next">
+    <img src="cat_belly.webp" alt="">
+    <div><b>つぎのゲーム、じゅんびちゅう。</b><br>…本気出したら、すぐできる。たぶん。</div>
+  </div>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <div class="label">PROFILE</div>
+  <h2>ししゃもについて</h2>
+  <div class="profile">
+    <div class="ph"><img src="cat_shy.webp" alt="てれるししゃも"></div>
+    <dl>
+      <dt>なまえ</dt><dd>ししゃも（魚じゃない）</dd>
+      <dt>しゅるい</dt><dd>スコティッシュフォールド × マンチカン</dd>
+      <dt>トレードマーク</dt><dd>黒いサングラスと、青い蝶ネクタイ</dd>
+      <dt>せいかく</dt><dd>めんどくさがりで、きまぐれ</dd>
+      <dt>すきなもの</dt><dd>小魚、ひるね、ゲーム</dd>
+      <dt>くちぐせ</dt><dd>「めし」「…べつに」「本気出したら、こんなもん」</dd>
+    </dl>
+  </div>
+</div></section>
+
+<section id="sns"><div class="wrap">
+  <div class="label">SNS</div>
+  <h2>ふだんのししゃも</h2>
+  <div class="sns">
+    <a href="https://www.tiktok.com/@boku_shishamo_" target="_blank" rel="noopener">TikTok<small>@boku_shishamo_</small></a>
+    <a href="https://www.instagram.com/boku_shishamo_/" target="_blank" rel="noopener">Instagram<small>@boku_shishamo_</small></a>
+    <a href="https://www.youtube.com/@boku_shishamo" target="_blank" rel="noopener">YouTube<small>@boku_shishamo</small></a>
+    <a href="https://x.com/boku_shishamo_" target="_blank" rel="noopener">X<small>@boku_shishamo_</small></a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <span class="logo"><span class="glasses"><i></i><i></i></span>ぼく、ししゃも、</span>
+  <span><a href="https://claude.ai/artifact/ELdtpwJUZTx5S5JK9MBKFC" target="_blank" rel="noopener">プライバシーポリシー</a>　© 2026 ぼく、ししゃも、</span>
+</div></footer>
+
+<script>
+const lines=['…ししゃもです。','…なに？','めし？','めしくれるの？','ちがうなら さわらないで','ぼく、ししゃも。魚じゃない','…べつに'];
+let n=0;const b=document.getElementById('bubble');
+document.getElementById('cat').addEventListener('click',()=>{n=(n+1)%lines.length;b.textContent=lines[n];});
+</script>
+</body>
+</html>
