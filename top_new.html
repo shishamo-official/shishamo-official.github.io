@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ぼく、ししゃも、｜本気を出さない猫 公式サイト</title>
+<meta name="description" content="本気を出さない猫「ししゃも」の公式サイト。ゲーム「ししゃものきまぐれジャンプ」「ししゃものきまぐれ壁キック」、LINEスタンプ「ぼく、ししゃも、」。">
+<meta property="og:title" content="ぼく、ししゃも、｜本気を出さない猫 公式サイト">
+<meta property="og:description" content="…魚じゃないです。本気出さない猫やってます。">
+<meta property="og:image" content="https://shishamo-official.github.io/ogp.jpg">
+<meta property="og:url" content="https://shishamo-official.github.io/">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="logo" href="./"><span class="glasses"><i></i><i></i></span>ぼく、ししゃも、</a>
+  <ul><li><a href="games.html">ゲーム</a></li><li><a href="stamps.html">スタンプ</a></li><li><a href="about.html">ししゃもについて</a></li><li><a href="sns.html">SNS</a></li></ul>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div class="txt">
+    <span class="pill">NOT SERIOUS CAT</span>
+    <h1><span class="nw">本気を出さない猫、</span><br><span class="bl">ししゃも</span>です。</h1>
+    <p class="lead">サングラスと青い蝶ネクタイがトレードマーク。<br>ゲームやスタンプで、ゆるっと活動中。</p>
+    <div class="cta">
+      <a class="btn dark" href="games.html">ゲームを見る</a>
+      <a class="btn line" href="sns.html">SNS を見る</a>
+    </div>
+  </div>
+  <div class="stage">
+    <div class="blob"></div><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div>
+    <div class="bubble" id="bubble">…ししゃもです。</div>
+    <img class="cat" id="cat" src="cat.webp" alt="サングラスをかけた猫のししゃも">
+  </div>
+</div></section>
+
+<section id="menu"><div class="wrap">
+  <div class="label">MENU</div>
+  <h2>ししゃものこと、いろいろ</h2>
+  <div class="cats">
+    <a class="catc" href="games.html">
+      <div><span class="tag">iPhone・無料</span><h3>ゲーム</h3><p>ジャンプと壁キック、2つ配信中。つぎもじゅんびちゅう。</p><span class="go">ゲームを見る →</span></div>
+      <div class="pic app"><img src="icon_kick.webp" alt=""></div>
+    </a>
+    <a class="catc" href="stamps.html">
+      <div><span class="tag">LINE</span><h3>スタンプ</h3><p>ふだん使い・クリスマス・あけおめ（12/20 発売）。</p><span class="go">スタンプを見る →</span></div>
+      <div class="pic"><img src="stamp_st1_05.webp" alt=""></div>
+    </a>
+    <a class="catc" href="about.html">
+      <div><span class="tag">PROFILE</span><h3>ししゃもについて</h3><p>魚じゃない。めんどくさがりで、きまぐれな猫。</p><span class="go">プロフィールを見る →</span></div>
+      <div class="pic cr"><img src="cat_shy.webp" alt=""></div>
+    </a>
+    <a class="catc" href="sns.html">
+      <div><span class="tag">SNS</span><h3>ふだんのししゃも</h3><p>TikTok・Instagram・YouTube・X で、ほぼ毎日。</p><span class="go">SNS を見る →</span></div>
+      <div class="pic cr"><img src="cat_belly.webp" alt=""></div>
+    </a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <nav class="fnav"><a href="./">トップ</a><a href="games.html">ゲーム</a><a href="stamps.html">スタンプ</a><a href="about.html">ししゃもについて</a><a href="sns.html">SNS</a></nav>
+  <span class="logo"><span class="glasses"><i></i><i></i></span>ぼく、ししゃも、</span>
+  <span><a href="https://claude.ai/artifact/ELdtpwJUZTx5S5JK9MBKFC" target="_blank" rel="noopener">プライバシーポリシー</a>　© 2026 ぼく、ししゃも、</span>
+</div></footer>
+
+<script>
+const lines=['…ししゃもです。','…なに？','めし？','めしくれるの？','ちがうなら さわらないで','ぼく、ししゃも。魚じゃない','…べつに'];
+let n=0;const b=document.getElementById('bubble');
+document.getElementById('cat').addEventListener('click',()=>{n=(n+1)%lines.length;b.textContent=lines[n];});
+</script>
+</body>
+</html>
