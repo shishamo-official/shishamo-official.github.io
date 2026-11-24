@@ -117,3 +117,4 @@ footer .fnav{display:flex;flex-wrap:wrap;gap:6px 16px;width:100%;padding-bottom:
  dd{padding-top:2px}
 }
 @media(max-width:760px){.phead h1{font-size:27px}}
+@media(max-width:760px){.game.rev>.shots{order:1}}
