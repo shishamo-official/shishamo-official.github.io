@@ -118,3 +118,13 @@ footer .fnav{display:flex;flex-wrap:wrap;gap:6px 16px;width:100%;padding-bottom:
 }
 @media(max-width:760px){.phead h1{font-size:27px}}
 @media(max-width:760px){.game.rev>.shots{order:1}}
+.goods{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:28px;display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:center}
+.goods .gph img{width:100%;border-radius:22px;display:block}
+.goods h3{font-size:22px;font-weight:800;line-height:1.35;margin:8px 0 4px}
+.goods p{color:var(--sub)}
+.goods .next{margin-top:18px;padding:16px 20px}.goods .next img{width:70px}
+.cats .catc:last-child{grid-column:1/-1}
+@media(max-width:760px){.goods{grid-template-columns:1fr;padding:22px}.nav ul{font-size:12.5px}.cats .catc:last-child{grid-column:auto}}
+.goods .gph{position:relative;padding:0 0 34px 0}
+.goods .gph img.sub{position:absolute;width:40%;right:-10px;bottom:0;border:5px solid #fff;box-shadow:0 10px 24px rgba(21,23,28,.18);transform:rotate(4deg)}
+@media(max-width:760px){.goods .gph{padding-bottom:40px}.goods .gph img.sub{right:-4px;width:42%}}
